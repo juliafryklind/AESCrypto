@@ -21,11 +21,11 @@ class ManagedAesSample
                 // Kryptera en sträng
                 byte[] encrypted = Encrypt(raw, aes.Key, aes.IV);
                 // Skriv ut krypterad sträng
-                Console.WriteLine($ "Encrypted data: {System.Text.Encoding.UTF8.GetString(encrypted)}");
+                Console.WriteLine( "Krypterat meddelande:"+ {System.Text.Encoding.UTF8.GetString(encrypted));
                 //dekryptera bitarna till sträng
                 string decrypted = Decrypt(encrypted, aes.Key, aes.IV);
                 // skriv ut dekrypterad sträng
-                Console.WriteLine($ "Decrypted data: {decrypted}");
+                Console.WriteLine( "Dekrypterat meddelande:"+ decrypted);
             }
         }
         catch (Exception exp)
